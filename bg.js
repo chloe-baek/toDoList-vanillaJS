@@ -1,12 +1,7 @@
-const images = ['0.jpeg', '1.jpeg', '2.jpeg'];
+const images = ['#5C7339', '#5f9ae0', '#BF9C88', '#BF452A'],
+  chosenColor = images[Math.floor(Math.random() * images.length)],
+  bgColor = document.querySelector('path');
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
-// console.log(chosenImage);
-
-const bgImage = document.createElement('img');
-
-bgImage.src = `img/${chosenImage}`;
-
-// console.log(bgImage);
-
-document.body.appendChild(bgImage);
+bgColor.style.fill = chosenColor;
+// bgImage.src = `img/${chosenImage}`;
+// document.body.appendChild(bgImage);

@@ -16,7 +16,7 @@
                 <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
                     <g transform="translate(154.11152267456055, 4.081295013427734)">
-                        <path fill="#5f9ae0">
+                        <path fill="">
                             <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
                                 values="M449.5,322.5Q423,395,354.5,423Q286,451,209.5,451.5Q133,452,80.5,391.5Q28,331,32,251.5Q36,172,92.5,123.5Q149,75,219.5,49Q290,23,343,75Q396,127,436,188.5Q476,250,449.5,322.5Z;
 
@@ -33,6 +33,7 @@
         </section>
         <section class="todo-section">
             <div class="info">
+                <h2 id="date"></h2>
                 <h2 id="clock">00:00:00</h2>
 
                 <div id="weather">
@@ -45,6 +46,7 @@
                     <input type="submit" value="Log In">
                 </form>
                 <h1 id="greeting" class="hidden"></h1>
+                <input type="submit" value="Change" id="clearStorage" class="hidden">
             </div>
             <div class="toDolist">
                 <div class="form">
@@ -64,6 +66,7 @@
 
     <script src="weather.js" defer></script>
     <script src="todo.js" defer></script>
+    <script src="bg.js" defer></script>
     <script src="greeting.js" defer></script>
     <script src="clock.js" defer></script>
 </body>
