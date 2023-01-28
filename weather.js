@@ -18,8 +18,9 @@ function onGeoOk(position) {
       const cityContainer = document.querySelector('#weather span:last-child');
       //   const name = data.name;
       //   const weather = data.weather[0].main;
-      weatherContainer.innerHTML = `${data.weather[0].main} / ${data.main.temp}	
-      &#8451;`;
+      weatherContainer.innerHTML = `${data.weather[0].main} / ${Math.floor(
+        data.main.temp
+      )}&#8451;`;
       cityContainer.innerHTML = data.name;
     }); //JS will call the url. You do not have to go to url.
 }
