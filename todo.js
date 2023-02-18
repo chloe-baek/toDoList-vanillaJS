@@ -37,7 +37,7 @@ function paintToDo(newTodo) {
 function handleToDoSubmit(e) {
   e.preventDefault();
   const newTodo = toDoInput.value;
-  //   console.log(newTodo); 밸류값을 받은 후 비워준다 ↓
+  //   console.log(newTodo);
   toDoInput.value = '';
   //   console.log(newTodo, toDoList.value);
   const newToDoObj = {
@@ -56,13 +56,12 @@ toDoForm.addEventListener('submit', handleToDoSubmit);
 // }
 
 const savedTodos = localStorage.getItem(TODOS_KEY);
-console.log(savedTodos); //string
+console.log(savedTodos);
 
 if (savedTodos) {
-  //(savedTodos !== null) savedTodos가 존재한다면,
   const parsedToDos = JSON.parse(savedTodos);
   toDos = parsedToDos;
-  console.log(parsedToDos); // array
-  // parsedToDos.forEach(sayHello);  == shortcut ↓↓↓↓↓
+  console.log(parsedToDos);
+
   parsedToDos.forEach(paintToDo);
 }
